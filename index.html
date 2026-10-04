@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Script Vault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigasi -->
+    <header class="navbar">
+        <div class="logo">🎮 ScriptVault</div>
+        <nav>
+            <a href="#">Beranda</a>
+            <a href="#">Skrip Populer</a>
+            <button class="btn-primary" id="openModal">Masuk Akun</button>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        <h1>Kumpulan Skrip Game Buatan Komunitas</h1>
+        <p class="subtitle">Temukan dan gunakan skrip game orisinal favorit Anda secara gratis.</p>
+
+        <!-- Kartu Skrip -->
+        <div class="script-grid">
+            <div class="script-card">
+                <h3>Auto Collect Coins</h3>
+                <p>Skrip otomatis untuk mengumpulkan koin di dalam game.</p>
+                <button class="btn-card" onclick="salinKode('loadstring(...)()')">Salin Skrip</button>
+            </div>
+
+            <div class="script-card">
+                <h3>Speed & Jump Booster</h3>
+                <p>Meningkatkan kecepatan jalan dan tinggi lompatan karakter.</p>
+                <button class="btn-card" onclick="salinKode('print(&quot;Speed Boost Active&quot;)')">Salin Skrip</button>
+            </div>
+
+            <div class="script-card">
+                <h3>Custom Lighting Mod</h3>
+                <p>Mengubah tampilan pencahayaan game menjadi mode malam.</p>
+                <button class="btn-card" onclick="salinKode('print(&quot;Lighting Mod Active&quot;)')">Salin Skrip</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Box (Pop-up Login Orisinal) -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2>Masuk ke ScriptVault</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="Username / Email" required>
+                <input type="password" placeholder="Kata Sandi" required>
+                <button type="submit" class="btn-submit">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
